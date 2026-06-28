@@ -12,6 +12,7 @@ public class Dapartment
         F_Name = fname;
         L_Name = lname;
     }
+    public string PhoneNumber {get;set;}
 
 
 }
