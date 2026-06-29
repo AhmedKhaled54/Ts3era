@@ -3,6 +3,7 @@ on:
     inputs:
       enviroment:
         description: "chiose enviroment"
+        default: "staging"
         required: true
         type: choice
         options:
@@ -14,6 +15,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "Deploye "
-        run: eco "Deploye is Enviromner ${{inputs.enviroment}}"
+        run: echo "Deploye is Enviromner ${{inputs.enviroment}}"
   
           
