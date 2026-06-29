@@ -1,0 +1,19 @@
+on: 
+  workflow_dispatch:
+    inputs:
+      enviroment:
+        description: "chiose enviroment"
+        required: true
+        type: choice
+        options:
+          - staging
+          - production 
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Deploye "
+        run: eco "Deploye is Enviromner ${{inputs.enviroment}}"
+  
+          
